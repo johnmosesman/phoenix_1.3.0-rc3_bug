@@ -1,3 +1,14 @@
+# Possible bug in Phoenix 1.3.0-rc3?
+
+If you run this project with `MIX_ENV=prod` the server hangs indefinitely.
+
+```
+$ export MIX_ENV=prod
+$ mix deps.get
+$ mix ecto.create
+$ mix phx.server
+```
+
 # Bug
 
 To start your Phoenix server:
