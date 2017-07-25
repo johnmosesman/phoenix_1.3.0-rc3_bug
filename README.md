@@ -3,7 +3,8 @@
 If you run this project with `MIX_ENV=prod` the server hangs indefinitely.
 
 ```
-$ export MIX_ENV=prod
+$ mix phx.gen.secret
+$ export MIX_ENV=prod PORT=4000
 $ mix deps.get
 $ mix ecto.create
 $ mix phx.server
